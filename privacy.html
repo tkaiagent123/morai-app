@@ -25,8 +25,9 @@
 <li>Stored: first name and initial, grade, scores, and ids of practiced words.</li>
 <li>A student picture is optional and added only by the teacher (with parent approval recommended). It is stored as a small image and shown on the student picker to anyone who knows the class code. The default is an icon.</li>
 <li>Text a student types or pastes in free reading is never uploaded.</li>
-<li>Data lives in Supabase (Frankfurt). Anonymous sign-ins with no class membership are deleted after 30 days.</li>
-<li>Speech recognition runs in the browser and may send audio to the browser vendor (Google/Apple). Teachers can turn it off in class settings.</li>
+<li>Data lives in Supabase (Frankfurt). Anonymous sign-ins with no class membership are deleted after 30 days, and sign-ins idle for 90 days are removed with their class membership.</li>
+<li>Results (attempts and session summaries) are deleted automatically after 13 months, and a class with no results for 13 months is deleted with everything in it. A teacher can erase a class and all its data at any time (class dashboard, "Delete class and all data").</li>
+<li>Speech recognition runs in the browser and may send audio to the browser vendor (Google/Apple). Teachers can turn it off for the whole class in class settings; then students record locally only and free reading and talking are unavailable.</li>
 <li>The AI partner "Mori" is on only after the teacher confirms school and parent approval. Conversations are not stored.</li>
 <li>A teacher can erase the class and all student data in one action ("Delete class and all data" on the dashboard).</li>
 </ul>
